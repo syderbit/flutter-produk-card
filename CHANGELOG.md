@@ -1,3 +1,10 @@
+## [0.0.2]
+
+### Version 0.0.2 (2025-08-21)
+
+- Fixed minor bugs and issues related to image url.
+- Enhanced Documentation for better readability.
+
 ## [0.0.1]
 
 ### Version 0.0.1 – Initial Release (2025-08-20)
