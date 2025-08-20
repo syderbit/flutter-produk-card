@@ -144,7 +144,7 @@ class _ProdukCardState extends State<ProdukCard> {
                       child: Builder(
                         builder: (context) {
                           try {
-                            if (widget.imageUrl != null) {
+                            if (widget.imageUrl != null && (widget.imageUrl ?? '').isNotEmpty) {
                               Uri? uri = Uri.tryParse(widget.imageUrl!);
                               if (uri?.isAbsolute ?? false) {
                                 return CachedNetworkImage(
@@ -164,10 +164,17 @@ class _ProdukCardState extends State<ProdukCard> {
                                   },
                                 );
                               } else {
-                                return Image.asset(widget.imageUrl!, height: 130, width: double.infinity, fit: BoxFit.cover);
+                                if ((widget.imageUrl ?? '').isEmpty) {
+                                  return Image.asset("assets/no_image.png",
+                                      package: 'produk_card', height: 130, width: double.infinity, fit: BoxFit.cover);
+                                } else {
+                                  return Image.asset(widget.imageUrl!, height: 130, width: double.infinity, fit: BoxFit.cover);
+                                }
                               }
+                            } else {
+                              return Image.asset("assets/no_image.png",
+                                  package: 'produk_card', height: 130, width: double.infinity, fit: BoxFit.cover);
                             }
-                            return Image.asset("assets/no_image.png", package: 'produk_card', height: 130, width: double.infinity, fit: BoxFit.cover);
                           } catch (e) {
                             return Image.asset("assets/no_image.png", package: 'produk_card', height: 130, width: double.infinity, fit: BoxFit.cover);
                           }
@@ -222,7 +229,6 @@ class _ProdukCardState extends State<ProdukCard> {
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: widget.textColor),
                     ),
                     Text(widget.categoryName ?? '', style: TextStyle(fontSize: 11, color: Colors.grey.shade600)),
-
                     const SizedBox(height: 4),
                     SizedBox(
                       height: 43,
@@ -233,7 +239,6 @@ class _ProdukCardState extends State<ProdukCard> {
                         style: TextStyle(color: Colors.grey.shade700, fontSize: 14),
                       ),
                     ),
-
                     if (widget.rating != null)
                       Padding(
                         padding: const EdgeInsets.only(top: 8.0),
