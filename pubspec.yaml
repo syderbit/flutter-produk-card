@@ -1,7 +1,9 @@
 name: produk_card
 description: "A versatile Flutter package packed with features to create stunning and informative product cards for your e-commerce apps."
 version: 0.0.1
-homepage:
+repository: https://github.com/syderbit/flutter-produk-card
+issue_tracker: https://github.com/syderbit/flutter-produk-card/issues
+homepage: https://github.com/syderbit/flutter-produk-card
 
 environment:
   sdk: ">=3.3.4 <4.0.0"
