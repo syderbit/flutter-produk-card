@@ -1,16 +1,3 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
 A versatile Flutter package packed with powerful features to help developers design and customize stunning, responsive, and informative product cards for e-commerce or shopping applications. With this package, you can easily display essential product information such as name, category, price, discounts, ratings, and images in a clean and visually appealing layout. It also provides flexible customization options for colors, typography, and styles, allowing seamless integration with the overall theme of your application. Whether you are building a simple store or a large-scale marketplace, this package offers the tools you need to create engaging product cards that enhance the shopping experience.
 
 ## Getting started
@@ -68,7 +55,7 @@ ProductCard(
 
 ## Contributing
 
-Community contributions are highly encouraged. Should you encounter any issues or wish to propose improvements (e.g., better documentation), please create an issue or submit a pull request in the repo. [GitHub repository](https://github.com/syderbit/product_card).
+Community contributions are highly encouraged. Should you encounter any issues or wish to propose improvements (e.g., better documentation), please create an issue or submit a pull request in the repo. [GitHub repository](https://github.com/syderbit/flutter-produk-card).
 
 ## Author
 
