@@ -11,29 +11,76 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A versatile Flutter package packed with powerful features to help developers design and customize stunning, responsive, and informative product cards for e-commerce or shopping applications. With this package, you can easily display essential product information such as name, category, price, discounts, ratings, and images in a clean and visually appealing layout. It also provides flexible customization options for colors, typography, and styles, allowing seamless integration with the overall theme of your application. Whether you are building a simple store or a large-scale marketplace, this package offers the tools you need to create engaging product cards that enhance the shopping experience.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add `product_card` as a dependency in your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  product_card: ^0.0.1
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Dart file:
 
 ```dart
-const like = 'sample';
+import 'package:product_card/product_card.dart';
 ```
 
-## Additional information
+Then, use the `ProductCard` widget in your application:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+ProductCard(
+  id: 2, // Produk ID
+  imageUrl: 'https://altitude.ph/cdn/shop/collections/AD_Store_Revamp_DJI-28_2000x.jpg', //add your image url here or assets image
+  categoryName: 'Pants',
+  productName: 'Men Linen Pants',
+  price: 2450000,
+  localePrice: 'en_US', // Default set to id_ID
+  onTap: (id) {
+    // Handle card tap event
+  },
+  onFavoritePressed: (id, isFav) {
+    // Handle favorite button press
+  },
+  shortDescription: 'comfortable & airy.', // Optional short description
+  rating: 4.2, // Optional rating
+  discountPercentage: 35.0, // Optional discount percentage
+  isAvailable: true, // Optional availability status
+  cardColor: Colors.white, // Optional card background color
+  textColor: Colors.black, // Optional text color
+  borderRadius: 8.0, // Optional border radius
+)
+```
+
+## Output
+
+</td>
+<td><img src="https://raw.githubusercontent.com/syderbit/flutter-produk-card/refs/heads/main/example_produk_card.png" alt="Example Product Card Image">
+</td>
+</tr>
+</table>
+
+## Contributing
+
+Community contributions are highly encouraged. Should you encounter any issues or wish to propose improvements (e.g., better documentation), please create an issue or submit a pull request in the repo. [GitHub repository](https://github.com/syderbit/product_card).
+
+## Author
+
+This package is created and maintained by [Aditya R].
+
+## Contact
+
+If you want to connect or have any questions or need further assistance, feel free to reach out:
+
+- Email: [syderbit[at]gmail[dot]com](mailto:syderbit@gmail.com)
+- GitHub: [@syderbit](https://github.com/syderbit)
+
+## License
+
+This package is released under the [MIT License](https://opensource.org/licenses/MIT).
