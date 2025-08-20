@@ -1,3 +1,11 @@
+# product_card
+
+[![pub package](https://img.shields.io/pub/v/produk_card.svg)](https://pub.dev/packages/produk_card)
+[![likes](https://img.shields.io/pub/likes/produk_card?logo=dart)](https://pub.dev/packages/produk_card/score)
+[![pub points](https://img.shields.io/pub/points/produk_card?logo=dart)](https://pub.dev/packages/produk_card/score)
+[![popularity](https://img.shields.io/pub/popularity/produk_card?logo=dart)](https://pub.dev/packages/produk_card/score)
+[![license](https://img.shields.io/github/license/syderbit/flutter-produk-card)](https://github.com/syderbit/flutter-produk-card/blob/main/LICENSE)
+
 A versatile Flutter package packed with powerful features to help developers design and customize stunning, responsive, and informative product cards for e-commerce or shopping applications. With this package, you can easily display essential product information such as name, category, price, discounts, ratings, and images in a clean and visually appealing layout. It also provides flexible customization options for colors, typography, and styles, allowing seamless integration with the overall theme of your application. Whether you are building a simple store or a large-scale marketplace, this package offers the tools you need to create engaging product cards that enhance the shopping experience.
 
 ## Getting started
